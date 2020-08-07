@@ -1,7 +1,3 @@
-# cheat
-all my cheat files
-
-------------------
 # Start Django :
 
 ```bash
