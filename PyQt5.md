@@ -1,33 +1,39 @@
 # PyQt5 
 
-## Load UI file 
+## Start Main && Load UI file 
 
 ```python
 #!/usr/bin/python3
 
-from PyQt5 import QtCore, QtGui, QtWidgets, uic
+#!/usr/bin/python3
+
+from PyQt5.QtGui import *
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.uic import loadUiType
 import sys
+# from main_ui import Ui_MainWindow
 
-class MyApp(QtWidgets.QMainWindow):
-    def __init__(self):
-        super(MyApp, self).__init__()
-        uic.loadUi('main.ui', self)
-        self.ui()
+MainUI,_ = loadUiType('main.ui')
 
-    def ui(self):
-    pass
+class Main(QMainWindow , MainUI):
+    def __init__(self , parent=None):
+        super(Main, self).__init__(parent)
+        QMainWindow.__init__(self)
+        self.setupUi(self)
+
+
 
 
 def main():
-    app = QtWidgets.QApplication(sys.argv)
-    window = MyApp()
+    app = QApplication(sys.argv)
+    window = Main()
     window.show()
-    sys.exit(app.exec_())
+    app.exec_()
 
 
 if __name__ == '__main__':
     main()
-
 ```
 ---
 
@@ -40,15 +46,20 @@ pyuic5 main.ui -o Main.py
 ```
 ---
 ### ICONS
-```
-<RCC>
-  <qresource prefix="16x16">
-    <file>icons/cil-arrow-bottom.png</file>
-  </qresource>
+```xml
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+        <file>icons/xxx.png</file>
+</qresource>
 </RCC>
 ```
 ---
-## Set ???
+## Remove TITLE BAR :
+```python
+        self.setWindowFlag(QtCore.Qt.FramelessWindowHint)
+        self.setAttribute(QtCore.Qt.WA_TranslucentBackground)
+
+```
 
 ### WINDOW title :
 
