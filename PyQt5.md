@@ -69,7 +69,7 @@ self.setWindowTitle('Main Window - Python Base')
 self.setGeometry(100, 100, 600, 400) 
 ```
 ### ProgressBar
-``python
+```python
 self.ui.progressBar.setMinimum(0)
 self.ui.progressBar.setMaximum(99)
 self.ui.progressBar.setValue(0)
