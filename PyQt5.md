@@ -69,10 +69,19 @@ self.setWindowTitle('Main Window - Python Base')
 self.setGeometry(100, 100, 600, 400) 
 ```
 ### ProgressBar
-```python
+```python3
+
 self.ui.progressBar.setMinimum(0)
 self.ui.progressBar.setMaximum(99)
 self.ui.progressBar.setValue(0)
+
+```
+#### cercular
+```css
+QFrame{
+	border-radius: 95px;	
+	background-color: rgb(58, 58, 102);
+}
 ```
 
 ### MOVE WINDOW
@@ -140,7 +149,7 @@ class UIFunctions(MainWindow):
 
 
 --- 
-# anomation 
+# animation 
 
 ```python
 class UIFunctions(MainWindow):
@@ -194,35 +203,57 @@ class MainWindow(QMainWindow):
 
 ```css
 QPushButton {
-    background-image: ICON_REPLACE;
-    background-position: left center;
-    background-repeat: no-repeat;
-    border: none;
-    border-left: 28px solid rgb(27, 29, 35);
-    background-color: rgb(27, 29, 35);
-    text-align: left;
-    padding-left: 45px;
-}
-QPushButton[Active=true] {
-    background-image: ICON_REPLACE;
-    background-position: left center;
-    background-repeat: no-repeat;
-    border: none;
-    border-left: 28px solid rgb(27, 29, 35);
-    border-right: 5px solid rgb(44, 49, 60);
-    background-color: rgb(27, 29, 35);
-    text-align: left;
-    padding-left: 45px;
+
 }
 QPushButton:hover {
-    background-color: rgb(33, 37, 43);
-    border-left: 28px solid rgb(33, 37, 43);
+
 }
 QPushButton:pressed {
-    background-color: rgb(85, 170, 255);
-    border-left: 28px solid rgb(85, 170, 255);
+
 }
+/* ------------------------------------ */
+
 ```
+## Main Colors 
+```css
+background-color: rgb(77, 77, 127);
+
+color: rgb(115, 185, 255); // Blue
+color: rgb(115, 255, 171); // Green
+color: rgb(255, 44, 174); // red
+
+--------------------------
+## TYTLE BAR   |-|o|x|
+
+QPushButton {
+	border: none;
+	border-radius: 8px;	
+	background-color: rgb(85, 255, 127);
+}
+QPushButton:hover {	
+	background-color: rgba(85, 255, 127, 150);
+}
+----------------
+QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 170, 0);
+}
+QPushButton:hover {	
+	background-color: rgba(255, 170, 0, 150);
+}
+-----------------
+QPushButton {
+	border: none;
+	border-radius: 8px;		
+	background-color: rgb(255, 0, 0);
+}
+QPushButton:hover {		
+	background-color: rgba(255, 0, 0, 150);
+}
+
+```
+
 
 ---
 # BD
