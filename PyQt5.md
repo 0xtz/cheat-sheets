@@ -52,7 +52,7 @@ pyuic5 main.ui -o Main.py
 ## Remove TITLE BAR :
 ```python
 
-self.setWindowFlags(Qt.Window | Qt.CustomizeWindowHint
+self.setWindowFlags(Qt.Window | Qt.CustomizeWindowHint)
 
 ```
 
