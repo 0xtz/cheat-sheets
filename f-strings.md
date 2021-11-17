@@ -85,6 +85,11 @@ You’d be able to do this:
 ```
 
 
-for more info read the [*the official DOCs*][https://docs.python.org/3/tutorial/inputoutput.html]]
-i get those from [realpython](https://realpython.com/python-f-strings/)
+> for more info read the [*the official DOCs*][https://docs.python.org/3/tutorial/inputoutput.html]
+> i get those from [realpython](https://realpython.com/python-f-strings/)
+
+
+## follow me on :
+[1.1]: http://i.imgur.com/tXSoThF.png
+[1]: https://twitter.com/0xtz_52
 
