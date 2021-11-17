@@ -91,5 +91,5 @@ You’d be able to do this:
 
 ## follow me on :
 
-(![@0xtz](http://i.imgur.com/tXSoThF.png))(https://twitter.com/0xtz_52)
+[![@0xtz](http://i.imgur.com/tXSoThF.png)](https://twitter.com/0xtz_52)
 
